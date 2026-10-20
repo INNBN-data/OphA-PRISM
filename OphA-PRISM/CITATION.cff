@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: Cite this software release and the associated manuscript when available.
+title: 'OphA-PRISM: Reference Analysis Software'
+version: 1.0.1
+date-released: '2026-10-20'
+license: MIT
+type: software
+authors:
+- family-names: Șerban
+  given-names: Matei
+- family-names: Toader
+  given-names: Corneliu
+- family-names: Ciurea
+  given-names: Alexandru Vlad
+- family-names: Dănăilă
+  given-names: Leon
+- family-names: Covache-Busuioc
+  given-names: Răzvan-Adrian
+abstract: Reference software for endpoint validation, nested model evaluation, calibration,
+  conformal prediction, temporal assessment, and aggregate verification in ophthalmic-segment
+  aneurysm microsurgery. Historical numerical reproduction remains unverified.

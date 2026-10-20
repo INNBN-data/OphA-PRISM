@@ -1,0 +1,8 @@
+inputs_relative_to: explicit --data-root
+private_output: runs/private/<run>
+public_artifacts: explicit RELEASE_FILES.txt only
+study_files:
+  development: cohort_flow_export_v2.csv
+  holdout: holdout_cohort_v1.csv
+  dictionary: data_dictionary_v2.csv
+  eligible_features: eligible_t0_t2_features.txt

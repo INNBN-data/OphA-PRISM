@@ -1,0 +1,27 @@
+Variable_Name,Temporal_Layer,Unit,Eligible_for_Preop_Prediction,Definition
+patient_id,T0,identifier,false,Anonymized unique index-patient identifier
+cohort_flag,T0,binary,false,"0 development, 1 reserved 2026 cohort"
+surgery_year,T4,year,false,Used only for chronological evaluation
+era,T4,category,false,Chronological development era
+surgeon_id,T4,category,false,Anonymized operator; sensitivity analysis only
+max_diameter_mm,T2,mm,true,Maximum aneurysm diameter
+neck_width_mm,T2,mm,true,Neck width
+height_mm,T2,mm,true,Aneurysm height
+dome_to_neck_ratio,T2,ratio,true,Maximum diameter divided by neck width
+aspect_ratio,T2,ratio,true,Height divided by neck width
+opha_incorporation,T2,binary,true,OphA incorporation
+neck_opha_involvement_pct,T2,percent,true,Neck-OphA involvement percentage
+optic_compression,T2,binary,true,Preoperative optic-nerve compression; operational criterion defined in source dictionary
+carotid_optic_interval_mm,T2,mm,true,Minimum three-dimensional ICA-optic interval
+intraluminal_thrombus,T2,binary,true,Intraluminal thrombus
+preoperative_visual_symptoms,T1,binary,true,Preoperative visual symptoms; canonical input name requires source mapping
+vision_event,T7,binary,false,Persistent adjudicated new visual morbidity
+vision_6mo_confirmed,T7,binary,false,Six-month persistence confirmation
+rroc_grade,T7,ordinal,false,"1 no residual, 2 neck remnant, 3 residual sac"
+remnant_intentional_stable,T7,binary,false,Accepted class II remnant
+opha_patency_loss,T7,binary,false,OphA patency loss
+technical_success,T7,binary,false,Favorable angiography and preserved OphA
+cure_failure,T7,binary,false,"Failure of favorable angiography, OphA preservation or vision"
+access_high_burden,T4,binary,false,Fixed cohort-derived high exposure-burden label
+control_high_burden,T4,binary,false,Fixed cohort-derived high vascular-control-burden label
+recon_label,T4,binary,false,Reconstructive clipping construct

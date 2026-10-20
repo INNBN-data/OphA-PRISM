@@ -1,0 +1,88 @@
+status: AUTHOR_REPORTED_NOT_INDEPENDENTLY_VERIFIED
+use: descriptive provenance; excluded from model fitting and software-test targets
+cohort:
+  development: 261
+  holdout: 28
+  registry_variables: 408
+  eligible_predictors: 142
+flow:
+  query: 612
+  not_surgically_screened: 297
+  surgical_screening: 315
+  screening_exclusions: 54
+  included: 261
+angiography:
+  rroc_i: 210
+  rroc_ii_accepted: 11
+  rroc_iii: 40
+  favorable: 221
+  opha_preserved: 259
+  technical_success: 220
+  cure_success: 211
+  cure_failure: 50
+cure_joint_cells:
+  '000': 211
+  '100': 26
+  '010': 1
+  '001': 9
+  '101': 13
+  '110': 0
+  '011': 0
+  '111': 1
+large_aneurysms:
+  n: 42
+  cure_failure: 39
+  residual_sac: 35
+  vision_event: 18
+  residual_and_vision_including_triple: 14
+eras:
+- era: 1
+  n: 82
+  vision: 2
+  cure_failure: 18
+- era: 2
+  n: 94
+  vision: 8
+  cure_failure: 15
+- era: 3
+  n: 85
+  vision: 13
+  cure_failure: 17
+models:
+  VISION:
+    events: 23
+    oof_auc: 0.804
+    brier: 0.062
+    calibration_slope: 1.03
+    status: author_reported
+  ACCESS:
+    events: 84
+    oof_auc: 0.608
+    brier: 0.223
+    calibration_slope: 0.42
+    status: author_reported
+  CONTROL:
+    events: 62
+    oof_auc: 0.693
+    brier: 0.159
+    calibration_slope: 0.91
+    status: author_reported
+  RECON:
+    events: 165
+    oof_auc: 0.68
+    brier: 0.212
+    calibration_slope: 0.96
+    status: author_reported
+  CURE:
+    events: 50
+    oof_auc: 0.89
+    brier: 0.05
+    calibration_slope: 0.83
+    status: author_reported
+pr_auc_definition: actual server output must identify average precision or trapezoidal area
+sample_size:
+  cure_candidate_parameters_reported: 15
+  anticipated_cox_snell_r2: 0.598
+  shrinkage: 0.9
+  author_reported_required_n: 306
+  verification: pending version-specific R output; source-equivalent v1.1.0 check gives 309
