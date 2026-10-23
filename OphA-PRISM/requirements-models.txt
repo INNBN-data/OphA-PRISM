@@ -1,6 +1,0 @@
-catboost==1.2
-lightgbm==4.0.0
-xgboost==1.7.6
-optuna>=3.3,<4
-shap==0.42.1
-statsmodels>=0.14,<0.15

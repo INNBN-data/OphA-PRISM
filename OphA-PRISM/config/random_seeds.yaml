@@ -1,5 +1,0 @@
-global_seed: 42
-outer_repeat_seed: 42 + repeat
-fold_fit_seed: 42 + 1000*repeat + 10*fold
-imputation_seed: fold fitting seed + phase offset + imputation index
-code_origin: reference seed schedule; original server assignments require verification
